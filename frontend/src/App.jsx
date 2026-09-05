@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react'
 import styled from 'styled-components'
 
-const API_URL = import.meta.env.VITE_API_URL || '/api'
+const API_URL = import.meta.env.VITE_API_URL || 'https://house-price-prediction-fsjf.onrender.com'
 const initialForm = { longitude: '-122.23', latitude: '37.88', housing_median_age: '41', total_rooms: '880', total_bedrooms: '129', population: '322', households: '126', median_income: '8.3252', ocean_proximity: '<1H OCEAN' }
 const fields = [
   ['longitude', 'Longitude', 'Geographic coordinate', '0.01'],

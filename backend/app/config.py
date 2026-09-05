@@ -11,7 +11,7 @@ class Settings(BaseSettings):
     environment: str = "production"
     model_name: str = "model_xgb"
     artifacts_dir: str | None = None
-    allowed_origins: list[str] = Field(default_factory=list)
+    allowed_origins: list[str] = Field(default_factory=lambda: ["*"])
 
 
 @lru_cache
